@@ -78,7 +78,7 @@ The goal of this programming assignment is to ask you to work with these differe
 ## Programming Task(s)
 
 <details>
-    <summary>LinkedList / ArrayList</summary>
+    <summary>TestLinkedList / TestArrayList</summary>
 
 Each of the data structures you are going to use (not _write_) is utilized as instance variables in a consumer and producer class. For example, the **LinkedListConsumer** and **LinkedListProducer** classes will use a `LinkedList.` 
 
@@ -120,43 +120,34 @@ However, now you must also provide the required constructor headers. You will so
  
 How can you use a `Queue` and a `Stack` to solve this problem? Removing from a `Stack` always removes from the "top" while removing from a `Queue` will always remove from the bottom!
 
-<ol>
-   <li>Add the characters to the `Stack` and `Queue` data structures you create</li>
-   <li>remove all the characters one at a time from the `Stack` and `Queue` in each iteration of a loop structure</li>
-   <li>each iteration, check if the characters you removed from both data structures are the same!</li>
-   <li>if they are ever not equal then that means the characters do not appear in the same order forward and backward</li>
-</ol>
+1. Add the characters to the `Stack` and `Queue` data structures you create
+2. remove all the characters one at a time from the `Stack` and `Queue` in each iteration of a loop structure
+3. each iteration, check if the characters you removed from both data structures are the same!
+4. if they are ever not equal then that means the characters do not appear in the same order forward and backward
 
 </details>
 
 <details>
    <summary>testPhoneDirectory</summary>
 
- <ol>
-    <li>Work on getting the tester method to compile. Once you have uncommented the tester method for this section, you will see the need to create a `PhoneDirectory` class.</li>
-    <li>Add missing method headers and bodies including any temporary returns such as returning `null` or returning `-1` (as you have seen in previous programming assignments) in `PhoneDirectory` to clear the compile errors from missing methods.</li>
-    <li>Similar to the other classes, add a private instance variable for the required data structure. In this case, it will be a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">HashTable</a>. 
-     
-     Import the required library through Eclipse Quickfix or by adding the import line above the class header line
+1. Work on getting the tester method to compile. Once you have uncommented the tester method for this section, you will see the need to create a `PhoneDirectory` class.
+2. Add missing method headers and bodies including any temporary returns such as returning `null` or returning `-1` (as you have seen in previous programming assignments) in `PhoneDirectory` to clear the compile errors from missing methods.
+3. Similar to the other classes, add a private instance variable for the required data structure. In this case, it will be a
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">HashTable</a>. Import the required library through Eclipse Quickfix or by adding the import line above the class header line
+
 ```
 //Required import line or use Eclipse Quickfix
 import java.util.HashTable;
 
 //Example Declaration and Instantiation of a HashTable:
-```
 HashTable<String, String> capitalCities = new HashTable<String, String>(); 
 ```
 
-</li>
-<li>Complete the setter method (`setNumebrForPerson`) through the use of the
-<a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-" target="_blank" rel="noopener">put </a>method of a `HashTable`.</li>
-<li>Complete the `findNumberForPerson` method by using the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-" target="_blank" rel="noopener">get </a>method of a `HashTable`.
+4. Complete the setter method (`setNumebrForPerson`) through the use of the [put](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-) method of a `HashTable`.
+5. Complete the `findNumberForPerson` method by using the [get](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-) method of a `HashTable`. _Hint: You may need to cast the return of the `get` method to an Integer._
+6. For the forget method, use the [remove](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#remove-java.lang.Object-) method of a `HashTable`.
 
-_Hint: You may need to cast the return of the `get` method to an Integer._</li>
-<li>For the forget method, use the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#remove-java.lang.Object-" target="_blank" rel="noopener">remove</a>method of a `HashTable`.</li>
-</ol>
-
-<a href="https://youtu.be/ewyZXIbokHM?si=1OslR6NGteRhkqrp">Hashtable demo use if you need it:</a>
+_Hashtable [video demo](https://youtu.be/ewyZXIbokHM?si=1OslR6NGteRhkqrp) use if you need it_
 
 </details>
         
