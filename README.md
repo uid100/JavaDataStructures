@@ -23,7 +23,7 @@ With contributions from:
 ## Assignment Overview
 
 <details> 
-    <summary>Data Structures</summary>
+    <summary><h3>Data Structures</h3></summary>
 
  Data structures are needed in Java programming to store and organize data efficiently. They allow programmers to access and manipulate data quickly and easily, which is essential for writing efficient and scalable code.
 
@@ -49,17 +49,26 @@ These are just a few examples of how data structures are used in Java programmin
 
 The goal of this programming assignment is to ask you to work with these different data structures and increase your awareness of their availability, behavior, and use. Familiarizing yourself with them will help you better consider how you might use them for your project.
 
+<a href="https://youtu.be/3g9ppsMEaN4?si=ujamp8IlRAYA4sJU">click here for more!</a>
 </details>
 
-________
-
-## Instructions
-
 <details>
+   <summary><h2>Instructions</h2></summary>
 
- <summary><h2>Instructions</h2></summary>
-
-## _(Open the Project)_
+   <h3>Open the Project</h3>
+   <ol>
+    <li>From the **<> Code** dropdown link in the repository (above), download the Zip file to your computer.</li>
+     <li>Extract the files to your working folder</li>
+     <li>Open Eclipse and import the project.
+         <ul>
+          <li>You can use File>Import menu item or right-click in the Package Manager and choose Import.</li>
+          <li>select General>Projects from Folder or Archive</li>
+          <li>navigate into the project until you see the `bin` and `src` folders, and choose *open*</li>
+         </ul>
+     </li>
+     <li>Expand the project in the package explorer and find the .java files below the **src** folder.</li>
+   </ol>
+     
 1. From the **<> Code** dropdown link in the repository (above), download the Zip file to your computer.
 2. Extract the files to your working folder
 3. Open Eclipse and import the project. 
@@ -68,18 +77,17 @@ ________
    - navigate into the project until you see the `bin` and `src` folders, and choose *open*
 4. Expand the project in the package explorer and find the .java files below the **src** folder.
 
-## _(Complete the Assignment)_
+   <h3>Complete the Assignment</h3>
 
   
 Similar to previous assignments, you will use the tester class to guide you in completing this programming assignment along with this programming assignment guide.
 
 </details>
 
-___________
 
 ## Programming Task(s)
 
-<details open>
+<details>
     <summary>LinkedList / ArrayList</summary>
 
 Each of the data structures you are going to use (not write) is utilized as instance variables in a consumer and producer class. For example, the `LinkedListConsumer` and `LinkedListProducer` classes will use a `LinkedList.` 
@@ -97,6 +105,67 @@ Complete the consume methods of the consumer-related class for LinkedList. These
 Good news! If you understood the parts to pass the first tester method, the same steps are applied for the producer and consumer classes that use an ArrayList. Work on completing the ArrayListConsumer and ArrayListProducer classes. 
 
 </details>
+
+<details>
+ <summary></summary>
+</details>
+
+        <details style="margin-bottom: 25px;">
+            <summary style="cursor: pointer;">testQueue / testStack</summary>
+            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
+                <p>The <span style="font-family: 'Courier New';">Queue</span>-related classes in this programming assignment are similar to the <span style="font-family: 'Courier New';">ArrayList </span>and <span style="font-family: 'Courier New';">LinkedList</span>. However, now you must also provide the required constructor headers. You will solve this using the same process!</p>
+            </div>
+        </details>
+        <details style="margin-bottom: 25px;">
+            <summary style="cursor: pointer;">testPalindrome</summary>
+            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
+                <p>A palindrome is a word spelled the same as forward and backward. For example, <i>racecar </i>is spelled the same going left-to-right as it is going right-to-left! Other examples are <i>mom</i>, <i>civic</i>, <i>rotor</i>, and <i>radar</i>!</p>
+                <p>How can you use a <span style="font-family: 'Courier New';">Queue </span>and a <span style="font-family: 'Courier New';">Stack </span>to solve this problem? Removing from a <span style="font-family: 'Courier New';">Stack </span>always removes from the "top" while removing from a <span style="font-family: 'Courier New';">Queue </span>will always remove from the bottom!</p>
+                <ol>
+                    <li>Add the characters to the <span style="font-family: 'Courier New';">Stack </span>and <span style="font-family: 'Courier New';">Queue </span>data structures you create</li>
+                    <li>remove all the characters one at a time from the <span style="font-family: 'Courier New';">Stack </span>and <span style="font-family: 'Courier New';">Queue </span>in each iteration of a loop structure</li>
+                    <li>each iteration, check if the characters you removed from both data structures are the same!</li>
+                    <li>if they are ever not equal then that means the characters do not appear in the same order forward and backward</li>
+                </ol>
+            </div>
+        </details>
+        <details style="margin-bottom: 25px;">
+            <summary style="cursor: pointer;">testPhoneDirectory</summary>
+            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
+                <ol>
+                    <li>Work on getting the tester method to compile. Once you have uncommented the tester method for this section, you will see the need to create a <span style="font-family: 'Courier New';">PhoneDirectory </span>class.&nbsp;</li>
+                    <li>Add missing method headers and bodies including any temporary returns such as returning <span style="font-family: 'Courier New';">null </span>or returning -1 (as you have seen in previous programming assignments) in <span style="font-family: 'Courier New';">PhoneDirectory </span>to clear the compile errors from missing methods.&nbsp;</li>
+                    <li>Similar to the other classes, add a private instance variable for the required data structure. In this case, it will be a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">HashTable</a>. Import the required library through Eclipse Quickfix or by adding the import line above the class header line<br />
+                        <p>//Required import line or use Eclipse Quickfix<br />import java.util.HashTable;</p>
+                        <p><span style="background-color: #ffff00; color: #000000;">//Example Declaration and Instantiation of a HashTable:</span></p>
+                        <p>Syntax: <code class="plain">Hashtable</code>&lt;<strong>KeyType</strong>, <strong>ValueType</strong>&gt; example = new <code class="plain">Hashtable</code>&lt;<strong>KeyType</strong>, <strong>ValueType</strong>&gt;(); //<i>where <strong>KeyType</strong> and <strong>ValueType</strong> are valid datatypes. </i></p>
+                        <p><i>Example</i></p>
+                        <pre><span><code class="language-java"><span class="token class-name" style="color: #0d0c0dff;">HashTable</span><span class="token generics"><span class="token punctuation" style="color: #0f0d0dff;">&lt;</span><span class="token class-name" style="color: #0f0e0eff;">String</span><span class="token punctuation" style="color: #060606ff;">,</span> <span class="token class-name" style="color: #0d0d0dff;">String</span><span class="token punctuation" style="color: #121212ff;">&gt;</span></span> capitalCities <span class="token operator">=</span> <span class="token keyword keyword-new" style="color: #00648f; background: #f5f2f0;">new</span> HashTable<span class="token generics"><span class="token punctuation" style="color: #0b0b0bff;">&lt;</span><span class="token class-name" style="color: #100f0fff;">String</span><span class="token punctuation" style="color: #0b0b0bff;">,</span> <span class="token class-name" style="color: #040404ff;">String</span><span class="token punctuation" style="color: #030303ff;">&gt;</span></span><span class="token punctuation" style="color: #0a0909ff;">(</span><span class="token punctuation" style="color: #080808ff;">)</span><span class="token punctuation" style="color: #121212ff;">; </span></code></span></pre>
+                    </li>
+                    <li>
+                        <div>Complete the setter method (<span style="font-family: 'Courier New';">setNumebrForPerson</span>) through the use of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-" target="_blank" rel="noopener">put </a>method of a <i><span style="font-family: 'Courier New';">HashTable</span></i>.&nbsp;</div>
+                    </li>
+                    <li>Complete the <span style="font-family: 'Courier New';">findNumberForPerson </span>method by using the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-" target="_blank" rel="noopener">get </a>method of a <span style="font-family: 'Courier New';">HashTable</span>. <i>Hint: You may need to cast the return of the <span style="font-family: 'Courier New';">get </span>method to an Integer.</i></li>
+                    <li>For the forget method, use the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#remove-java.lang.Object-" target="_blank" rel="noopener"><span style="font-family: 'Courier New';">remove </span></a>method of a <span style="font-family: 'Courier New';">HashTable</span>.</li>
+                </ol>
+                <p>Hashtable demo use if you need it:</p>
+                <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/ewyZXIbokHM?si=II7UE836o5uoJrhK" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
+            </div>
+        </details>
+        <details style="margin-bottom: 25px;">
+            <summary style="cursor: pointer;">testSearchEngine</summary>
+            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
+                <ol>
+                    <li>Uncomment the tester and work on getting the project to compile by adding the missing Java class and its bare-bone content similar to the steps taken for the previous testers in this programming assignment.&nbsp;</li>
+                    <li>This problem is somewhat similar to the <span style="font-family: 'Courier New';">PhoneDirectory</span>. However, the <span style="font-family: 'Courier New';">HashTable </span>entries in this particular class should be storing a list of elements rather than one value. The <span style="font-family: 'Courier New';">HashTable </span>that you add as the instance variable should be using an appropriate data structure introduced in this module. Add the instance variable now. <br />
+                        <pre>//Example: Typical HashTable declaration and Instantiation&nbsp; <br /><code class="language-java"><span class="token class-name" style="color: #0d0c0cff;">HashTable</span><span class="token generics"><span class="token punctuation" style="color: #060606ff;">&lt;</span><span class="token class-name" style="color: #080708ff;">String</span><span class="token punctuation" style="color: #0b0b0bff;">,</span> <span class="token class-name" style="color: #0a0a0aff;">String</span><span class="token punctuation" style="color: #030303ff;">&gt;</span></span> capitalCities <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> </code><code class="language-java"><span class="token class-name" style="color: #000000ff;">HashTable</span></code><code class="language-java"><span class="token generics"><span class="token punctuation" style="color: #000000ff;">&lt;</span><span class="token class-name" style="color: #000000ff;">String</span><span class="token punctuation" style="color: #000000ff;">,</span> <span class="token class-name" style="color: #000000ff;">String</span><span class="token punctuation" style="color: #0d0d0dff;">&gt;</span></span><span class="token punctuation" style="color: #000000ff;">(</span><span class="token punctuation" style="color: #000000ff;">)</span><span class="token punctuation" style="color: #000000ff;">; <br /><br />//Example: HashTable with a data structure, an array<br /></span></code><code class="language-java"><span class="token class-name" style="color: #000000ff;">HashTable</span></code><code class="language-java"><span class="token punctuation" style="color: #010101ff;">&lt;String, int[]&gt; test = new </span></code><code class="language-java"><span class="token class-name" style="color: #000000ff;">HashTable</span></code><code class="language-java"><span class="token punctuation" style="color: #000000ff;">&lt;String, int[]&gt;();</span></code></pre>
+                        <pre><span style="color: #000000;"><code class="language-java"><span class="token punctuation" style="background-color: #ffff00; color: #000000ff;">Do not use an array for your solution! Look at what type of data structure the tester towards the end of the tester method. <br /></span></code></span></pre>
+                    </li>
+                    <li>You will see that the first two uses of the add method for <span style="font-family: 'Courier New';">SearchEngine </span>will add two website links that are associated with <i>"ice cream". </i>This is the reason you need a data structure to hold the multiple entries for a given entry.&nbsp;<br />a) When adding an entry to the map, you should check if it exists. Look for the necessary method to do so.&nbsp;<br />b) If it <i>does </i>exist, alter the data structure so that you add to it instead of replacing the entire entry! Otherwise, add it as usual.</li>
+                    <li>The search method needs to return a copy of the original list that is stored in your data structure. Whatever you are returning here should be a copy. You do not want the actual data structure to be altered accidentally by code that performs a simple search. Revisit the <span style="font-family: 'Courier New';">Harbor </span>class from a previous programming assignment if you need a reminder.&nbsp;</li>
+                </ol>
+            </div>
+        </details>
 
 ___________
 
