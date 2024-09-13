@@ -80,9 +80,9 @@ The goal of this programming assignment is to ask you to work with these differe
 <details>
     <summary>LinkedList / ArrayList</summary>
 
-Each of the data structures you are going to use (not write) is utilized as instance variables in a consumer and producer class. For example, the **LinkedListConsumer** and **LinkedListProducer** classes will use a `LinkedList.` 
+Each of the data structures you are going to use (not _write_) is utilized as instance variables in a consumer and producer class. For example, the **LinkedListConsumer** and **LinkedListProducer** classes will use a `LinkedList.` 
 
-Let's start by getting the first tester method to compile. Currently, the constructors for `LinkedListConsumer` and `LinkedListProducer` are incomplete. Complete the header of the constructors as well as the body. Below is the example for the Producer. Since a constructor initializes instance variables (fields), this must mean that the LinkedListProducer class should have an instance variable to store the LinkedList being passed to the constructor. In total, the three highlighted sections should be added to the `LinkedListProducer` class. 
+Let's start by getting the first tester method to compile. Currently, the constructors for **LinkedListConsumer** and **LinkedListProducer** are incomplete. Complete the header of the constructors as well as the body. Below is the example for the Producer. Since a constructor initializes instance variables (fields), this must mean that the **LinkedListProducer** class should have an instance variable to store the `LinkedList` being passed to the constructor. In total, the three highlighted sections should be added to the **LinkedListProducer** class. 
 
 ```
 private LinkedList<String> list;
@@ -94,11 +94,13 @@ public LinkedListProducer(LinkedList<String> list) {
 
 Perform similar steps for the **LinkedListConsumer**.
 
-If it's not already obvious by the names, the producer classes for a data structure will add to the data structure and the consumer will removed from it! Complete the produce method of the producer. This method will add Links to an external site to the LinkedList. This is where you can spend some time looking at the LinkedList API. The alternative would be to use Eclipse's auto-suggest features when you use the dot operator on objects. You could go through the available methods to see how to add to a LinkedList.
+If it's not already obvious by the names, the producer classes for a data structure will add to the data structure and the consumer will removed from it! Complete the **produce** method of the producer. This method will add Links to an external site to the `LinkedList`. This is where you can spend some time looking at the `LinkedList` API. The alternative would be to use Eclipse's auto-suggest features when you use the dot operator on objects. You could go through the available methods to see how to add to a `LinkedList`.
 
 Complete the consume methods of the consumer-related class for LinkedList. These methods will remove elements from the LinkedList at specific locations. Look through the available remove methodsLinks to an external site. of the LinkedList class. You can utilize any of these remove methods to accomplish removing from the desired locations. It's important to note that these remove methods also return the element that is removed from the list. This is what is returned by the consumer remove methods! If the list is empty or if the desired location is invalid, the remove methods of the consumer should return null;
 
 Good news! If you understood the parts to pass the first tester method, the same steps are applied for the producer and consumer classes that use an `ArrayList`. Work on completing the `ArrayListConsumer` and `ArrayListProducer` classes. 
+
+<a href="https://youtu.be/3g9ppsMEaN4?si=Df0cslsWpN8aw9Ay">LinkedList TesterMethod</a>
 
 </details>
 
