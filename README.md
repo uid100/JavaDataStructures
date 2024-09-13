@@ -1,12 +1,12 @@
 # JavaDataStructures
- derived from CISC191DataStructures
-
---------
-
+ 
 Java Test Driven Development (TDD) project to exercise Java data structures with unit testing ( with **JUnit** )
 
 ________
 
+<details open>
+    <summary>derived from CISC191DataStructures</summary>
+ 
 ![220px-MesaLogo](https://github.com/schougaard/SanDiegoMesaCISC191ProgrammingChallenges/assets/716243/334f6724-6afa-4198-9eff-7c49c472cd35)
 
 # San Diego Mesa College CISC 191 Programming Challenges
@@ -20,7 +20,7 @@ With contributions from:
 - Dom David,
 - [Dan Sullivan](https://github.com/uid100)
 
-________
+</details>
 
 ## Assignment Overview
 
