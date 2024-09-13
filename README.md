@@ -23,7 +23,7 @@ With contributions from:
 ## Assignment Overview
 
 <details> 
-    <summary> <h3>Data Structures</h3> </summary>
+    <summary>Data Structures</summary>
 
  Data structures are needed in Java programming to store and organize data efficiently. They allow programmers to access and manipulate data quickly and easily, which is essential for writing efficient and scalable code.
 
@@ -53,7 +53,7 @@ The goal of this programming assignment is to ask you to work with these differe
 </details>
 
 <details>
-   <summary><h2>Instructions</h2></summary>
+   <summary>Instructions</summary>
 
    <h3>Open the Project</h3>
    <ol>
