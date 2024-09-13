@@ -23,7 +23,7 @@ With contributions from:
 ## Assignment Overview
 
 <details> 
-    <summary>Data Structures</summary>
+    <summary>About Data Structures</summary>
 
  Data structures are needed in Java programming to store and organize data efficiently. They allow programmers to access and manipulate data quickly and easily, which is essential for writing efficient and scalable code.
 
@@ -50,6 +50,7 @@ These are just a few examples of how data structures are used in Java programmin
 The goal of this programming assignment is to ask you to work with these different data structures and increase your awareness of their availability, behavior, and use. Familiarizing yourself with them will help you better consider how you might use them for your project.
 
 <a href="https://youtu.be/3g9ppsMEaN4?si=ujamp8IlRAYA4sJU">click here for more!</a>
+
 </details>
 
 <details>
@@ -69,19 +70,8 @@ The goal of this programming assignment is to ask you to work with these differe
      <li>Expand the project in the package explorer and find the .java files below the **src** folder.</li>
    </ol>
      
-1. From the **<> Code** dropdown link in the repository (above), download the Zip file to your computer.
-2. Extract the files to your working folder
-3. Open Eclipse and import the project. 
-   - You can use File>Import menu item or right-click in the Package Manager and choose Import.
-   - select General>Projects from Folder or Archive
-   - navigate into the project until you see the `bin` and `src` folders, and choose *open*
-4. Expand the project in the package explorer and find the .java files below the **src** folder.
-
    <h3>Complete the Assignment</h3>
-
-  
-Similar to previous assignments, you will use the tester class to guide you in completing this programming assignment along with this programming assignment guide.
-
+   <p>Similar to previous assignments, you will use the tester class to guide you in completing this programming assignment along with this programming assignment guide.</p>
 </details>
 
 
