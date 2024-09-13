@@ -150,10 +150,9 @@ _Hashtable [video demo](https://youtu.be/ewyZXIbokHM?si=1OslR6NGteRhkqrp) use if
 </details>
 <details>
    <summary>testSearchEngine</summary>
-   <ol>
-       <li>Uncomment the tester and work on getting the project to compile by adding the missing Java class and its bare-bone content similar to the steps taken for the previous testers in this programming assignment.</li>
-       <li>This problem is somewhat similar to the `PhoneDirectory`. However, the `HashTable` entries in this particular class should be storing a list of elements rather than one value. The `HashTable` that you add as the instance variable should be using an appropriate data structure introduced in this module. Add the instance variable now.
 
+1. Uncomment the tester and work on getting the project to compile by adding the missing Java class and its bare-bone content similar to the steps taken for the previous testers in this programming assignment.
+2. This problem is somewhat similar to the `PhoneDirectory`. However, the `HashTable` entries in this particular class should be storing a list of elements rather than one value. The `HashTable` that you add as the instance variable should be using an appropriate data structure introduced in this module. Add the instance variable now.
 ```
 //Example: Typical HashTable declaration and Instantiation  
 HashTable<String, String> capitalCities = new HashTable<String, String>(); 
@@ -164,20 +163,13 @@ HashTable<String, int[]> test = new HashTable<String, int[]>();
 
 _**Do not use an array for your solution! Look at what type of data structure the tester towards the end of the tester method.**_
 
- </li>
- <li>You will see that the first two uses of the add method for `SearchEngine`will add two website links that are associated with <i>"ice cream". </i>This is the reason you need a data structure to hold the multiple entries for a given entry.&nbsp;
-<ul>
-<li>When adding an entry to the map, you should check if it exists. Look for the necessary method to do so.</li>
-<li>If it <i>does </i>exist, alter the data structure so that you add to it instead of replacing the entire entry! Otherwise, add it as usual.</li>
-</ul>
-</li>
+3. You will see that the first two uses of the add method for `SearchEngine`will add two website links that are associated with _"ice cream"._ This is the reason you need a data structure to hold the multiple entries for a given entry.
+    - When adding an entry to the map, you should check if it exists. Look for the necessary method to do so.
+    - If it _does_ exist, alter the data structure so that you add to it instead of replacing the entire entry! Otherwise, add it as usual.
+4. The search method needs to return a copy of the original list that is stored in your data structure. Whatever you are returning here should be a copy. You do not want the actual data structure to be altered accidentally by code that performs a simple search. Revisit the `Harbor` class from a previous programming assignment if you need a reminder.
 
-<li>The search method needs to return a copy of the original list that is stored in your data structure. Whatever you are returning here should be a copy. You do not want the actual data structure to be altered accidentally by code that performs a simple search. Revisit the `Harbor` class from a previous programming assignment if you need a reminder.</li>
-                </ol>
+</details>
 
-        </details>
-
-___________
 
 ## Complete and zip the project
 1. Run and add the code to the src folder until the tests are successful.
