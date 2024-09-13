@@ -133,40 +133,57 @@ How can you use a `Queue` and a `Stack` to solve this problem? Removing from a `
  <ol>
     <li>Work on getting the tester method to compile. Once you have uncommented the tester method for this section, you will see the need to create a `PhoneDirectory` class.</li>
     <li>Add missing method headers and bodies including any temporary returns such as returning `null` or returning `-1` (as you have seen in previous programming assignments) in `PhoneDirectory` to clear the compile errors from missing methods.</li>
-    <li>Similar to the other classes, add a private instance variable for the required data structure. In this case, it will be a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">HashTable</a>. Import the required library through Eclipse Quickfix or by adding the import line above the class header line<br />
-                        <p>//Required import line or use Eclipse Quickfix<br />import java.util.HashTable;</p>
-                        <p><span style="background-color: #ffff00; color: #000000;">//Example Declaration and Instantiation of a HashTable:</span></p>
-                        <p>Syntax: <code class="plain">Hashtable</code>&lt;<strong>KeyType</strong>, <strong>ValueType</strong>&gt; example = new <code class="plain">Hashtable</code>&lt;<strong>KeyType</strong>, <strong>ValueType</strong>&gt;(); //<i>where <strong>KeyType</strong> and <strong>ValueType</strong> are valid datatypes. </i></p>
+    <li>Similar to the other classes, add a private instance variable for the required data structure. In this case, it will be a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">HashTable</a>. 
+     
+     Import the required library through Eclipse Quickfix or by adding the import line above the class header line
+```
+//Required import line or use Eclipse Quickfix
+import java.util.HashTable;
 
-<p><i>Example</i></p>
+//Example Declaration and Instantiation of a HashTable:
 ```
 HashTable<String, String> capitalCities = new HashTable<String, String>(); 
 ```
 
 </li>
-                    <li>
-                        <div>Complete the setter method (<span style="font-family: 'Courier New';">setNumebrForPerson</span>) through the use of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-" target="_blank" rel="noopener">put </a>method of a <i><span style="font-family: 'Courier New';">HashTable</span></i>.&nbsp;</div>
-                    </li>
-                    <li>Complete the <span style="font-family: 'Courier New';">findNumberForPerson </span>method by using the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-" target="_blank" rel="noopener">get </a>method of a <span style="font-family: 'Courier New';">HashTable</span>. <i>Hint: You may need to cast the return of the <span style="font-family: 'Courier New';">get </span>method to an Integer.</i></li>
-                    <li>For the forget method, use the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#remove-java.lang.Object-" target="_blank" rel="noopener"><span style="font-family: 'Courier New';">remove </span></a>method of a <span style="font-family: 'Courier New';">HashTable</span>.</li>
-                </ol>
-                <p>Hashtable demo use if you need it:</p>
-                <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/ewyZXIbokHM?si=II7UE836o5uoJrhK" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
+<li>Complete the setter method (`setNumebrForPerson`) through the use of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-" target="_blank" rel="noopener">put </a>method of a `HashTable`.</li>
+<li>Complete the `findNumberForPerson` method by using the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-" target="_blank" rel="noopener">get </a>method of a `HashTable`.
+
+_Hint: You may need to cast the return of the `get` method to an Integer._</li>
+<li>For the forget method, use the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#remove-java.lang.Object-" target="_blank" rel="noopener"><span style="font-family: 'Courier New';">remove </span></a>method of a `HashTable`.</li>
+</ol>
+
+<a href="https://youtu.be/ewyZXIbokHM?si=1OslR6NGteRhkqrp">Hashtable demo use if you need it:</a>
+
 </details>
         
 <details>
-            <summary style="cursor: pointer;">testSearchEngine</summary>
-            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
-                <ol>
-                    <li>Uncomment the tester and work on getting the project to compile by adding the missing Java class and its bare-bone content similar to the steps taken for the previous testers in this programming assignment.&nbsp;</li>
-                    <li>This problem is somewhat similar to the <span style="font-family: 'Courier New';">PhoneDirectory</span>. However, the <span style="font-family: 'Courier New';">HashTable </span>entries in this particular class should be storing a list of elements rather than one value. The <span style="font-family: 'Courier New';">HashTable </span>that you add as the instance variable should be using an appropriate data structure introduced in this module. Add the instance variable now. <br />
-                        <pre>//Example: Typical HashTable declaration and Instantiation&nbsp; <br /><code class="language-java"><span class="token class-name" style="color: #0d0c0cff;">HashTable</span><span class="token generics"><span class="token punctuation" style="color: #060606ff;">&lt;</span><span class="token class-name" style="color: #080708ff;">String</span><span class="token punctuation" style="color: #0b0b0bff;">,</span> <span class="token class-name" style="color: #0a0a0aff;">String</span><span class="token punctuation" style="color: #030303ff;">&gt;</span></span> capitalCities <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> </code><code class="language-java"><span class="token class-name" style="color: #000000ff;">HashTable</span></code><code class="language-java"><span class="token generics"><span class="token punctuation" style="color: #000000ff;">&lt;</span><span class="token class-name" style="color: #000000ff;">String</span><span class="token punctuation" style="color: #000000ff;">,</span> <span class="token class-name" style="color: #000000ff;">String</span><span class="token punctuation" style="color: #0d0d0dff;">&gt;</span></span><span class="token punctuation" style="color: #000000ff;">(</span><span class="token punctuation" style="color: #000000ff;">)</span><span class="token punctuation" style="color: #000000ff;">; <br /><br />//Example: HashTable with a data structure, an array<br /></span></code><code class="language-java"><span class="token class-name" style="color: #000000ff;">HashTable</span></code><code class="language-java"><span class="token punctuation" style="color: #010101ff;">&lt;String, int[]&gt; test = new </span></code><code class="language-java"><span class="token class-name" style="color: #000000ff;">HashTable</span></code><code class="language-java"><span class="token punctuation" style="color: #000000ff;">&lt;String, int[]&gt;();</span></code></pre>
-                        <pre><span style="color: #000000;"><code class="language-java"><span class="token punctuation" style="background-color: #ffff00; color: #000000ff;">Do not use an array for your solution! Look at what type of data structure the tester towards the end of the tester method. <br /></span></code></span></pre>
-                    </li>
-                    <li>You will see that the first two uses of the add method for <span style="font-family: 'Courier New';">SearchEngine </span>will add two website links that are associated with <i>"ice cream". </i>This is the reason you need a data structure to hold the multiple entries for a given entry.&nbsp;<br />a) When adding an entry to the map, you should check if it exists. Look for the necessary method to do so.&nbsp;<br />b) If it <i>does </i>exist, alter the data structure so that you add to it instead of replacing the entire entry! Otherwise, add it as usual.</li>
-                    <li>The search method needs to return a copy of the original list that is stored in your data structure. Whatever you are returning here should be a copy. You do not want the actual data structure to be altered accidentally by code that performs a simple search. Revisit the <span style="font-family: 'Courier New';">Harbor </span>class from a previous programming assignment if you need a reminder.&nbsp;</li>
+   <summary>testSearchEngine</summary>
+   <ol>
+       <li>Uncomment the tester and work on getting the project to compile by adding the missing Java class and its bare-bone content similar to the steps taken for the previous testers in this programming assignment.</li>
+       <li>This problem is somewhat similar to the `PhoneDirectory`. However, the `HashTable` entries in this particular class should be storing a list of elements rather than one value. The `HashTable` that you add as the instance variable should be using an appropriate data structure introduced in this module. Add the instance variable now.
+
+```
+//Example: Typical HashTable declaration and Instantiation  
+HashTable<String, String> capitalCities = new HashTable<String, String>(); 
+
+//Example: HashTable with a data structure, an array
+HashTable<String, int[]> test = new HashTable<String, int[]>();
+```
+
+_**Do not use an array for your solution! Look at what type of data structure the tester towards the end of the tester method.**_
+
+ </li>
+ <li>You will see that the first two uses of the add method for `SearchEngine`will add two website links that are associated with <i>"ice cream". </i>This is the reason you need a data structure to hold the multiple entries for a given entry.&nbsp;
+<ul>
+<li>When adding an entry to the map, you should check if it exists. Look for the necessary method to do so.</li>
+<li>If it <i>does </i>exist, alter the data structure so that you add to it instead of replacing the entire entry! Otherwise, add it as usual.</li>
+</ul>
+</li>
+
+<li>The search method needs to return a copy of the original list that is stored in your data structure. Whatever you are returning here should be a copy. You do not want the actual data structure to be altered accidentally by code that performs a simple search. Revisit the `Harbor` class from a previous programming assignment if you need a reminder.</li>
                 </ol>
-            </div>
+
         </details>
 
 ___________
