@@ -146,11 +146,12 @@ HashTable<String, String> capitalCities = new HashTable<String, String>();
 ```
 
 </li>
-<li>Complete the setter method (`setNumebrForPerson`) through the use of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-" target="_blank" rel="noopener">put </a>method of a `HashTable`.</li>
+<li>Complete the setter method (`setNumebrForPerson`) through the use of the
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-" target="_blank" rel="noopener">put </a>method of a `HashTable`.</li>
 <li>Complete the `findNumberForPerson` method by using the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#get-java.lang.Object-" target="_blank" rel="noopener">get </a>method of a `HashTable`.
 
 _Hint: You may need to cast the return of the `get` method to an Integer._</li>
-<li>For the forget method, use the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#remove-java.lang.Object-" target="_blank" rel="noopener"><span style="font-family: 'Courier New';">remove </span></a>method of a `HashTable`.</li>
+<li>For the forget method, use the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#remove-java.lang.Object-" target="_blank" rel="noopener">remove</a>method of a `HashTable`.</li>
 </ol>
 
 <a href="https://youtu.be/ewyZXIbokHM?si=1OslR6NGteRhkqrp">Hashtable demo use if you need it:</a>
