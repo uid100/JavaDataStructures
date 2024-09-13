@@ -105,7 +105,9 @@ Good news! If you understood the parts to pass the first tester method, the same
 <details>
  <summary>testQueue / testStack</summary>
 
-The `Queue`-related classes in this programming assignment are similar to the `ArrayList` and `LinkedList`. However, now you must also provide the required constructor headers. You will solve this using the same process!</p>
+The `Queue`-related classes in this programming assignment are similar to the `ArrayList` and `LinkedList`. 
+
+However, now you must also provide the required constructor headers. You will solve this using the same process!</p>
 
 </details>
 
@@ -150,9 +152,9 @@ HashTable<String, String> capitalCities = new HashTable<String, String>();
                 </ol>
                 <p>Hashtable demo use if you need it:</p>
                 <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/ewyZXIbokHM?si=II7UE836o5uoJrhK" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
+</details>
+        
+<details>
             <summary style="cursor: pointer;">testSearchEngine</summary>
             <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
                 <ol>
