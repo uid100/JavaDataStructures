@@ -80,65 +80,68 @@ The goal of this programming assignment is to ask you to work with these differe
 <details>
     <summary>LinkedList / ArrayList</summary>
 
-Each of the data structures you are going to use (not write) is utilized as instance variables in a consumer and producer class. For example, the `LinkedListConsumer` and `LinkedListProducer` classes will use a `LinkedList.` 
+Each of the data structures you are going to use (not write) is utilized as instance variables in a consumer and producer class. For example, the **LinkedListConsumer** and **LinkedListProducer** classes will use a `LinkedList.` 
 
-Let's start by getting the first tester method to compile. Currently, the constructors for LinkedListConsumer and LinkedListProducer are incomplete. Complete the header of the constructors as well as the body. Below is the example for the Producer. Since a constructor initializes instance variables (fields), this must mean that the LinkedListProducer class should have an instance variable to store the LinkedList being passed to the constructor. In total, the three highlighted sections should be added to the LinkedListProducer class. 
+Let's start by getting the first tester method to compile. Currently, the constructors for `LinkedListConsumer` and `LinkedListProducer` are incomplete. Complete the header of the constructors as well as the body. Below is the example for the Producer. Since a constructor initializes instance variables (fields), this must mean that the LinkedListProducer class should have an instance variable to store the LinkedList being passed to the constructor. In total, the three highlighted sections should be added to the `LinkedListProducer` class. 
 
-<code>
+```
 private LinkedList<String> list;
 
-public LinkedListProducer(LinkedList<String> list)
-{
+public LinkedListProducer(LinkedList<String> list) {
        this.list = list;
 }
-</code>
+```
 
-Perform similar steps for the `LinkedListConsumer.
+Perform similar steps for the **LinkedListConsumer**.
 
 If it's not already obvious by the names, the producer classes for a data structure will add to the data structure and the consumer will removed from it! Complete the produce method of the producer. This method will add Links to an external site to the LinkedList. This is where you can spend some time looking at the LinkedList API. The alternative would be to use Eclipse's auto-suggest features when you use the dot operator on objects. You could go through the available methods to see how to add to a LinkedList.
 
 Complete the consume methods of the consumer-related class for LinkedList. These methods will remove elements from the LinkedList at specific locations. Look through the available remove methodsLinks to an external site. of the LinkedList class. You can utilize any of these remove methods to accomplish removing from the desired locations. It's important to note that these remove methods also return the element that is removed from the list. This is what is returned by the consumer remove methods! If the list is empty or if the desired location is invalid, the remove methods of the consumer should return null;
 
-Good news! If you understood the parts to pass the first tester method, the same steps are applied for the producer and consumer classes that use an ArrayList. Work on completing the ArrayListConsumer and ArrayListProducer classes. 
+Good news! If you understood the parts to pass the first tester method, the same steps are applied for the producer and consumer classes that use an `ArrayList`. Work on completing the `ArrayListConsumer` and `ArrayListProducer` classes. 
 
 </details>
 
 <details>
- <summary></summary>
+ <summary>testQueue / testStack</summary>
+
+The `Queue`-related classes in this programming assignment are similar to the `ArrayList` and `LinkedList`. However, now you must also provide the required constructor headers. You will solve this using the same process!</p>
+
 </details>
 
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">testQueue / testStack</summary>
-            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
-                <p>The <span style="font-family: 'Courier New';">Queue</span>-related classes in this programming assignment are similar to the <span style="font-family: 'Courier New';">ArrayList </span>and <span style="font-family: 'Courier New';">LinkedList</span>. However, now you must also provide the required constructor headers. You will solve this using the same process!</p>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">testPalindrome</summary>
-            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
-                <p>A palindrome is a word spelled the same as forward and backward. For example, <i>racecar </i>is spelled the same going left-to-right as it is going right-to-left! Other examples are <i>mom</i>, <i>civic</i>, <i>rotor</i>, and <i>radar</i>!</p>
-                <p>How can you use a <span style="font-family: 'Courier New';">Queue </span>and a <span style="font-family: 'Courier New';">Stack </span>to solve this problem? Removing from a <span style="font-family: 'Courier New';">Stack </span>always removes from the "top" while removing from a <span style="font-family: 'Courier New';">Queue </span>will always remove from the bottom!</p>
-                <ol>
-                    <li>Add the characters to the <span style="font-family: 'Courier New';">Stack </span>and <span style="font-family: 'Courier New';">Queue </span>data structures you create</li>
-                    <li>remove all the characters one at a time from the <span style="font-family: 'Courier New';">Stack </span>and <span style="font-family: 'Courier New';">Queue </span>in each iteration of a loop structure</li>
-                    <li>each iteration, check if the characters you removed from both data structures are the same!</li>
-                    <li>if they are ever not equal then that means the characters do not appear in the same order forward and backward</li>
-                </ol>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">testPhoneDirectory</summary>
-            <div style="border: thin solid #F1F3F4; padding: 5px 15px;">
-                <ol>
-                    <li>Work on getting the tester method to compile. Once you have uncommented the tester method for this section, you will see the need to create a <span style="font-family: 'Courier New';">PhoneDirectory </span>class.&nbsp;</li>
-                    <li>Add missing method headers and bodies including any temporary returns such as returning <span style="font-family: 'Courier New';">null </span>or returning -1 (as you have seen in previous programming assignments) in <span style="font-family: 'Courier New';">PhoneDirectory </span>to clear the compile errors from missing methods.&nbsp;</li>
-                    <li>Similar to the other classes, add a private instance variable for the required data structure. In this case, it will be a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">HashTable</a>. Import the required library through Eclipse Quickfix or by adding the import line above the class header line<br />
+<details>
+    <summary>testPalindrome</summary>
+
+ A palindrome is a word spelled the same as forward and backward. For example, _racecar_ is spelled the same going left-to-right as it is going right-to-left! Other examples are _mom_, _civic_, _rotor_, and _radar_!
+ 
+How can you use a `Queue` and a `Stack` to solve this problem? Removing from a `Stack` always removes from the "top" while removing from a `Queue` will always remove from the bottom!
+
+<ol>
+   <li>Add the characters to the `Stack` and `Queue` data structures you create</li>
+   <li>remove all the characters one at a time from the `Stack` and `Queue` in each iteration of a loop structure</li>
+   <li>each iteration, check if the characters you removed from both data structures are the same!</li>
+   <li>if they are ever not equal then that means the characters do not appear in the same order forward and backward</li>
+</ol>
+
+</details>
+
+<details>
+   <summary>testPhoneDirectory</summary>
+
+ <ol>
+    <li>Work on getting the tester method to compile. Once you have uncommented the tester method for this section, you will see the need to create a `PhoneDirectory` class.</li>
+    <li>Add missing method headers and bodies including any temporary returns such as returning `null` or returning `-1` (as you have seen in previous programming assignments) in `PhoneDirectory` to clear the compile errors from missing methods.</li>
+    <li>Similar to the other classes, add a private instance variable for the required data structure. In this case, it will be a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">HashTable</a>. Import the required library through Eclipse Quickfix or by adding the import line above the class header line<br />
                         <p>//Required import line or use Eclipse Quickfix<br />import java.util.HashTable;</p>
                         <p><span style="background-color: #ffff00; color: #000000;">//Example Declaration and Instantiation of a HashTable:</span></p>
                         <p>Syntax: <code class="plain">Hashtable</code>&lt;<strong>KeyType</strong>, <strong>ValueType</strong>&gt; example = new <code class="plain">Hashtable</code>&lt;<strong>KeyType</strong>, <strong>ValueType</strong>&gt;(); //<i>where <strong>KeyType</strong> and <strong>ValueType</strong> are valid datatypes. </i></p>
-                        <p><i>Example</i></p>
-                        <pre><span><code class="language-java"><span class="token class-name" style="color: #0d0c0dff;">HashTable</span><span class="token generics"><span class="token punctuation" style="color: #0f0d0dff;">&lt;</span><span class="token class-name" style="color: #0f0e0eff;">String</span><span class="token punctuation" style="color: #060606ff;">,</span> <span class="token class-name" style="color: #0d0d0dff;">String</span><span class="token punctuation" style="color: #121212ff;">&gt;</span></span> capitalCities <span class="token operator">=</span> <span class="token keyword keyword-new" style="color: #00648f; background: #f5f2f0;">new</span> HashTable<span class="token generics"><span class="token punctuation" style="color: #0b0b0bff;">&lt;</span><span class="token class-name" style="color: #100f0fff;">String</span><span class="token punctuation" style="color: #0b0b0bff;">,</span> <span class="token class-name" style="color: #040404ff;">String</span><span class="token punctuation" style="color: #030303ff;">&gt;</span></span><span class="token punctuation" style="color: #0a0909ff;">(</span><span class="token punctuation" style="color: #080808ff;">)</span><span class="token punctuation" style="color: #121212ff;">; </span></code></span></pre>
-                    </li>
+
+<p><i>Example</i></p>
+```
+HashTable<String, String> capitalCities = new HashTable<String, String>(); 
+```
+
+</li>
                     <li>
                         <div>Complete the setter method (<span style="font-family: 'Courier New';">setNumebrForPerson</span>) through the use of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#put-K-V-" target="_blank" rel="noopener">put </a>method of a <i><span style="font-family: 'Courier New';">HashTable</span></i>.&nbsp;</div>
                     </li>
