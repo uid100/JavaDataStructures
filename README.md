@@ -78,7 +78,7 @@ The goal of this programming assignment is to ask you to work with these differe
 ## Programming Task(s)
 
 <details>
-    <summary>TestLinkedList / TestArrayList</summary>
+    <summary>testLinkedList / testArrayList</summary>
 
 Each of the data structures you are going to use (not _write_) is utilized as instance variables in a consumer and producer class. For example, the **LinkedListConsumer** and **LinkedListProducer** classes will use a `LinkedList.` 
 
@@ -100,7 +100,7 @@ Complete the consume methods of the consumer-related class for LinkedList. These
 
 Good news! If you understood the parts to pass the first tester method, the same steps are applied for the producer and consumer classes that use an `ArrayList`. Work on completing the `ArrayListConsumer` and `ArrayListProducer` classes. 
 
-<a href="https://youtu.be/3g9ppsMEaN4?si=Df0cslsWpN8aw9Ay">LinkedList TesterMethod</a>
+_[LinkedList TesterMethod video](https://youtu.be/3g9ppsMEaN4?si=Df0cslsWpN8aw9Ay)_
 
 </details>
 
@@ -112,7 +112,6 @@ The `Queue`-related classes in this programming assignment are similar to the `A
 However, now you must also provide the required constructor headers. You will solve this using the same process!</p>
 
 </details>
-
 <details>
     <summary>testPalindrome</summary>
 
@@ -126,7 +125,6 @@ How can you use a `Queue` and a `Stack` to solve this problem? Removing from a `
 4. if they are ever not equal then that means the characters do not appear in the same order forward and backward
 
 </details>
-
 <details>
    <summary>testPhoneDirectory</summary>
 
@@ -150,7 +148,6 @@ HashTable<String, String> capitalCities = new HashTable<String, String>();
 _Hashtable [video demo](https://youtu.be/ewyZXIbokHM?si=1OslR6NGteRhkqrp) use if you need it_
 
 </details>
-        
 <details>
    <summary>testSearchEngine</summary>
    <ol>
