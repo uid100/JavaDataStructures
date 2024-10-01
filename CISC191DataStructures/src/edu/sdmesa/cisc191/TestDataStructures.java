@@ -73,7 +73,7 @@ class TestDataStructures
 //		
 //		assertNull(consumer.consume());
 //	}
-
+//
 //	@Test
 //	public void testQueue()
 //	{
@@ -99,7 +99,7 @@ class TestDataStructures
 //		
 //		assertNull(consumer.consume());
 //	}
-
+//
 //	@Test
 //	public void testStack()
 //	{
@@ -126,7 +126,7 @@ class TestDataStructures
 //		
 //		assertNull(consumer.consume());
 //	}
-	
+//	
 //	@Test
 //	public void testPalindrome()
 //	{
@@ -143,7 +143,7 @@ class TestDataStructures
 //		assertTrue(Datastructure.isPalindrome(racecar));
 //
 //	}
-	
+//	
 //	@Test
 //	public void testPhoneDirectory()
 //	{
@@ -173,7 +173,7 @@ class TestDataStructures
 //	    
 //	    assertNull(directory.findNumberForPerson("Xavier"));
 //	}
-	
+//	
 //	@Test
 //	public void testSearchEngine()
 //	{
